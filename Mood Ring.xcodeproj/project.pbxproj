@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C31654F2BD8A917002E5C97 /* Mood_RingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C31654E2BD8A917002E5C97 /* Mood_RingApp.swift */; };
+		6C3165512BD8A917002E5C97 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3165502BD8A917002E5C97 /* MainView.swift */; };
+		6C3165532BD8A918002E5C97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3165522BD8A918002E5C97 /* Assets.xcassets */; };
+		6C3165562BD8A918002E5C97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3165552BD8A918002E5C97 /* Preview Assets.xcassets */; };
+		6C31655E2BD8AAB4002E5C97 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6C31655D2BD8AAB4002E5C97 /* FirebaseAuth */; };
+		6C3165602BD8AAB4002E5C97 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6C31655F2BD8AAB4002E5C97 /* FirebaseFirestore */; };
+		6C3165622BD8AAB4002E5C97 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6C3165612BD8AAB4002E5C97 /* FirebaseFirestoreSwift */; };
+		6C3165642BD8ACCA002E5C97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C3165632BD8ACCA002E5C97 /* GoogleService-Info.plist */; };
+		6C31656A2BD8B59F002E5C97 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3165692BD8B59F002E5C97 /* ProfileView.swift */; };
+		6C31656C2BD8B5CF002E5C97 /* MoodLogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C31656B2BD8B5CF002E5C97 /* MoodLogsView.swift */; };
+		6C31656E2BD8B5E6002E5C97 /* NewLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C31656D2BD8B5E6002E5C97 /* NewLogView.swift */; };
+		6C3165702BD8B5F1002E5C97 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C31656F2BD8B5F1002E5C97 /* LoginView.swift */; };
+		6C3165722BD8B5FD002E5C97 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3165712BD8B5FD002E5C97 /* RegisterView.swift */; };
+		6C3165762BD8B67D002E5C97 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3165752BD8B67D002E5C97 /* User.swift */; };
+		6C3165782BD8B688002E5C97 /* MoodLogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3165772BD8B688002E5C97 /* MoodLogItem.swift */; };
+		6C31657A2BD8B6EE002E5C97 /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3165792BD8B6EE002E5C97 /* MainViewViewModel.swift */; };
+		6C31657C2BD8B6FE002E5C97 /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C31657B2BD8B6FE002E5C97 /* ProfileViewViewModel.swift */; };
+		6C31657E2BD8B70B002E5C97 /* MoodLogsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C31657D2BD8B70B002E5C97 /* MoodLogsViewViewModel.swift */; };
+		6C3165802BD8B71E002E5C97 /* NewLogViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C31657F2BD8B71E002E5C97 /* NewLogViewViewModel.swift */; };
+		6C3165822BD8B735002E5C97 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3165812BD8B735002E5C97 /* LoginViewViewModel.swift */; };
+		6C3165842BD8B740002E5C97 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3165832BD8B740002E5C97 /* RegisterViewViewModel.swift */; };
+		6C31658C2BD8C7B7002E5C97 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C31658B2BD8C7B7002E5C97 /* HeaderView.swift */; };
+		6C3165902BD94CB1002E5C97 /* MoodRingLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C31658F2BD94CB1002E5C97 /* MoodRingLogo.png */; };
+		6C3165922BD95ADC002E5C97 /* MRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3165912BD95ADC002E5C97 /* MRButton.swift */; };
+		6C3165942BD97235002E5C97 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3165932BD97235002E5C97 /* extensions.swift */; };
+		6C3165962BE4CE98002E5C97 /* MoodsDescribedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3165952BE4CE98002E5C97 /* MoodsDescribedView.swift */; };
+		6C3165982BE54FC2002E5C97 /* MoodRingAppIcon 01 Artboard 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C3165972BE54FC2002E5C97 /* MoodRingAppIcon 01 Artboard 1.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6C31654B2BD8A917002E5C97 /* Mood Ring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mood Ring.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C31654E2BD8A917002E5C97 /* Mood_RingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood_RingApp.swift; sourceTree = "<group>"; };
+		6C3165502BD8A917002E5C97 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6C3165522BD8A918002E5C97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C3165552BD8A918002E5C97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6C3165632BD8ACCA002E5C97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6C3165692BD8B59F002E5C97 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6C31656B2BD8B5CF002E5C97 /* MoodLogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodLogsView.swift; sourceTree = "<group>"; };
+		6C31656D2BD8B5E6002E5C97 /* NewLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLogView.swift; sourceTree = "<group>"; };
+		6C31656F2BD8B5F1002E5C97 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6C3165712BD8B5FD002E5C97 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		6C3165752BD8B67D002E5C97 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6C3165772BD8B688002E5C97 /* MoodLogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodLogItem.swift; sourceTree = "<group>"; };
+		6C3165792BD8B6EE002E5C97 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		6C31657B2BD8B6FE002E5C97 /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
+		6C31657D2BD8B70B002E5C97 /* MoodLogsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodLogsViewViewModel.swift; sourceTree = "<group>"; };
+		6C31657F2BD8B71E002E5C97 /* NewLogViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLogViewViewModel.swift; sourceTree = "<group>"; };
+		6C3165812BD8B735002E5C97 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		6C3165832BD8B740002E5C97 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
+		6C31658B2BD8C7B7002E5C97 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		6C31658F2BD94CB1002E5C97 /* MoodRingLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MoodRingLogo.png; path = ../../../../../Downloads/MoodRingLogo.png; sourceTree = "<group>"; };
+		6C3165912BD95ADC002E5C97 /* MRButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRButton.swift; sourceTree = "<group>"; };
+		6C3165932BD97235002E5C97 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		6C3165952BE4CE98002E5C97 /* MoodsDescribedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsDescribedView.swift; sourceTree = "<group>"; };
+		6C3165972BE54FC2002E5C97 /* MoodRingAppIcon 01 Artboard 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoodRingAppIcon 01 Artboard 1.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C3165482BD8A917002E5C97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C31655E2BD8AAB4002E5C97 /* FirebaseAuth in Frameworks */,
+				6C3165602BD8AAB4002E5C97 /* FirebaseFirestore in Frameworks */,
+				6C3165622BD8AAB4002E5C97 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C3165422BD8A917002E5C97 = {
+			isa = PBXGroup;
+			children = (
+				6C31654D2BD8A917002E5C97 /* Mood Ring */,
+				6C31654C2BD8A917002E5C97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C31654C2BD8A917002E5C97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C31654B2BD8A917002E5C97 /* Mood Ring.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C31654D2BD8A917002E5C97 /* Mood Ring */ = {
+			isa = PBXGroup;
+			children = (
+				6C3165682BD8B4A5002E5C97 /* Other */,
+				6C3165672BD8B48F002E5C97 /* Models */,
+				6C3165662BD8B47C002E5C97 /* ViewModels */,
+				6C3165652BD8B457002E5C97 /* Views */,
+				6C3165542BD8A918002E5C97 /* Preview Content */,
+			);
+			path = "Mood Ring";
+			sourceTree = "<group>";
+		};
+		6C3165542BD8A918002E5C97 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6C3165552BD8A918002E5C97 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6C3165652BD8B457002E5C97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C3165502BD8A917002E5C97 /* MainView.swift */,
+				6C3165952BE4CE98002E5C97 /* MoodsDescribedView.swift */,
+				6C3165692BD8B59F002E5C97 /* ProfileView.swift */,
+				6C31656B2BD8B5CF002E5C97 /* MoodLogsView.swift */,
+				6C31656D2BD8B5E6002E5C97 /* NewLogView.swift */,
+				6C31656F2BD8B5F1002E5C97 /* LoginView.swift */,
+				6C3165712BD8B5FD002E5C97 /* RegisterView.swift */,
+				6C31658B2BD8C7B7002E5C97 /* HeaderView.swift */,
+				6C3165912BD95ADC002E5C97 /* MRButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6C3165662BD8B47C002E5C97 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6C3165792BD8B6EE002E5C97 /* MainViewViewModel.swift */,
+				6C31657B2BD8B6FE002E5C97 /* ProfileViewViewModel.swift */,
+				6C31657D2BD8B70B002E5C97 /* MoodLogsViewViewModel.swift */,
+				6C31657F2BD8B71E002E5C97 /* NewLogViewViewModel.swift */,
+				6C3165812BD8B735002E5C97 /* LoginViewViewModel.swift */,
+				6C3165832BD8B740002E5C97 /* RegisterViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6C3165672BD8B48F002E5C97 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6C3165752BD8B67D002E5C97 /* User.swift */,
+				6C3165772BD8B688002E5C97 /* MoodLogItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6C3165682BD8B4A5002E5C97 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6C3165972BE54FC2002E5C97 /* MoodRingAppIcon 01 Artboard 1.png */,
+				6C3165632BD8ACCA002E5C97 /* GoogleService-Info.plist */,
+				6C31654E2BD8A917002E5C97 /* Mood_RingApp.swift */,
+				6C3165522BD8A918002E5C97 /* Assets.xcassets */,
+				6C31658F2BD94CB1002E5C97 /* MoodRingLogo.png */,
+				6C3165932BD97235002E5C97 /* extensions.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C31654A2BD8A917002E5C97 /* Mood Ring */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C3165592BD8A918002E5C97 /* Build configuration list for PBXNativeTarget "Mood Ring" */;
+			buildPhases = (
+				6C3165472BD8A917002E5C97 /* Sources */,
+				6C3165482BD8A917002E5C97 /* Frameworks */,
+				6C3165492BD8A917002E5C97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mood Ring";
+			packageProductDependencies = (
+				6C31655D2BD8AAB4002E5C97 /* FirebaseAuth */,
+				6C31655F2BD8AAB4002E5C97 /* FirebaseFirestore */,
+				6C3165612BD8AAB4002E5C97 /* FirebaseFirestoreSwift */,
+			);
+			productName = "Mood Ring";
+			productReference = 6C31654B2BD8A917002E5C97 /* Mood Ring.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C3165432BD8A917002E5C97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					6C31654A2BD8A917002E5C97 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 6C3165462BD8A917002E5C97 /* Build configuration list for PBXProject "Mood Ring" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C3165422BD8A917002E5C97;
+			packageReferences = (
+				6C31655C2BD8AAB4002E5C97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 6C31654C2BD8A917002E5C97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C31654A2BD8A917002E5C97 /* Mood Ring */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C3165492BD8A917002E5C97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3165982BE54FC2002E5C97 /* MoodRingAppIcon 01 Artboard 1.png in Resources */,
+				6C3165562BD8A918002E5C97 /* Preview Assets.xcassets in Resources */,
+				6C3165532BD8A918002E5C97 /* Assets.xcassets in Resources */,
+				6C3165642BD8ACCA002E5C97 /* GoogleService-Info.plist in Resources */,
+				6C3165902BD94CB1002E5C97 /* MoodRingLogo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C3165472BD8A917002E5C97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C31658C2BD8C7B7002E5C97 /* HeaderView.swift in Sources */,
+				6C3165702BD8B5F1002E5C97 /* LoginView.swift in Sources */,
+				6C31656C2BD8B5CF002E5C97 /* MoodLogsView.swift in Sources */,
+				6C3165842BD8B740002E5C97 /* RegisterViewViewModel.swift in Sources */,
+				6C3165962BE4CE98002E5C97 /* MoodsDescribedView.swift in Sources */,
+				6C31657A2BD8B6EE002E5C97 /* MainViewViewModel.swift in Sources */,
+				6C3165782BD8B688002E5C97 /* MoodLogItem.swift in Sources */,
+				6C3165512BD8A917002E5C97 /* MainView.swift in Sources */,
+				6C31657C2BD8B6FE002E5C97 /* ProfileViewViewModel.swift in Sources */,
+				6C3165722BD8B5FD002E5C97 /* RegisterView.swift in Sources */,
+				6C31657E2BD8B70B002E5C97 /* MoodLogsViewViewModel.swift in Sources */,
+				6C3165802BD8B71E002E5C97 /* NewLogViewViewModel.swift in Sources */,
+				6C3165822BD8B735002E5C97 /* LoginViewViewModel.swift in Sources */,
+				6C3165762BD8B67D002E5C97 /* User.swift in Sources */,
+				6C3165942BD97235002E5C97 /* extensions.swift in Sources */,
+				6C31656E2BD8B5E6002E5C97 /* NewLogView.swift in Sources */,
+				6C3165922BD95ADC002E5C97 /* MRButton.swift in Sources */,
+				6C31656A2BD8B59F002E5C97 /* ProfileView.swift in Sources */,
+				6C31654F2BD8A917002E5C97 /* Mood_RingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6C3165572BD8A918002E5C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C3165582BD8A918002E5C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C31655A2BD8A918002E5C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mood Ring/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mood Ring";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mood.Mood-Ring";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C31655B2BD8A918002E5C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mood Ring/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mood Ring";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mood.Mood-Ring";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C3165462BD8A917002E5C97 /* Build configuration list for PBXProject "Mood Ring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C3165572BD8A918002E5C97 /* Debug */,
+				6C3165582BD8A918002E5C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C3165592BD8A918002E5C97 /* Build configuration list for PBXNativeTarget "Mood Ring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C31655A2BD8A918002E5C97 /* Debug */,
+				6C31655B2BD8A918002E5C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6C31655C2BD8AAB4002E5C97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6C31655D2BD8AAB4002E5C97 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C31655C2BD8AAB4002E5C97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6C31655F2BD8AAB4002E5C97 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C31655C2BD8AAB4002E5C97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6C3165612BD8AAB4002E5C97 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C31655C2BD8AAB4002E5C97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6C3165432BD8A917002E5C97 /* Project object */;
+}
